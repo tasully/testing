@@ -1,4 +1,4 @@
-/* Takumi Sullivan the styles for final project grid layout for jan 4, 2020 FOR INDEX PAGE*/
+/* Alachua County annual report styles*/
 *{
     margin: 0; /*for all*/
     padding: 0;
@@ -26,7 +26,10 @@ a {font-weight: bold}
 a:link { color: #cc6600;} /*this is orange color*/
 a:hover, a:focus {color: #009900;} /*this is green color*/
 
-/*the styles for header*/
+/************************/
+/***the styles for header*/
+/************************/
+
 header {
     grid-area: header;
     display: grid;
@@ -45,12 +48,11 @@ header h2{
     font-weight: bold;
 }
 
-/* header h3{ halloween
-    font-size: 120%;
-    text-indent: 1em;
-}*/
 
+/*****************************/
 /* the styles for navigation*/
+/*****************************/
+
 #nav_menu {
     grid-area: navi;
     
@@ -105,15 +107,15 @@ header h2{
     color: #cc6600; 
 }
 
+/*****************************/
+/****the styles for main******/
+/*****************************/
 
-/*the styles for main*/
 main {
- 
     grid-area: main;
     display: grid;
     grid-column: 1/2;
     grid-template: repeat(13, auto) / 1fr; 
-  /*  grid-gap: 20px;*/
     grid-template-areas: 
         "county_manager"
         "county_comm"
@@ -129,6 +131,11 @@ main {
         "engaged"
         "list"; 
 }
+
+/*****************************/
+/*****county manager section**/
+/*****************************/
+
 #county_manager {
     grid-area: county_manager;
     padding-left: 12%;
@@ -152,6 +159,11 @@ font-size: 90%;
   padding-right: 1.5em;
 }
 
+
+/*****************************/
+/*****mission boxes***********/
+/*****************************/
+
 .boxed_right, .boxed_right_v {
    background-color: #0b3456;
     float: right;
@@ -161,7 +173,6 @@ font-size: 90%;
     color: #ffffff;
     padding: 1.5em;
 }
-
 
 .boxed_left {
    background-color: #0b3456;
@@ -188,6 +199,9 @@ font-size: 90%;
 
 }
 
+/*****************************/
+/**********bullet list********/
+/*****************************/
 
 ul { padding-left: 1em;} /* to align the list */
 li { 
@@ -208,6 +222,22 @@ ul.square {
      padding-bottom: 1em;
     padding-left: 3em;
 }
+
+
+ul.square_list {
+    list-style: square;
+    padding-top: .75em;
+    padding-bottom: .75em;
+}
+
+.square_list li { /* line height on stay engaged list*/
+    line-height: 2.2;
+}
+
+/*****************************/
+/******objectives/successes***/
+/*****************************/
+
  h5 {
     font-size: 100%;
     color: #cc6600;
@@ -216,8 +246,9 @@ ul.square {
      padding-top: 1.5em;
      font-weight: bold;
 }
- 
-/*styles for iframe*/
+/*****************************/
+/*******styles for iframe*****/
+/*****************************/
  
 
 #today { /*today;s show video*/
@@ -239,8 +270,10 @@ ul.square {
     width: 100%;
 }
 
+/*****************************/
+/***county commission seciton*/
+/*****************************/
 
-/* county commission seciton*/
 #county_comm {
     grid-area: county_comm;
     background-color: #e6e8e7;
@@ -264,8 +297,10 @@ color: #003366;
     padding-left: 15%;
     line-height: 1.75;
 }
+/*****************************/
+/**** stay engaged section ***/
+/*****************************/
 
-/* stay engaged section */
 #engaged {
     grid-area: engaged;
     background-color: #ffffff;
@@ -284,6 +319,7 @@ color: #003366;
     padding-right: 25%;
     padding-bottom: 5%;
 }
+
 h6 {
     font-size: 100%;
     color: #000000;
@@ -292,17 +328,10 @@ h6 {
     font-weight: bold;}
 
 
-ul.square_list {
-    list-style: square;
-    padding-top: .75em;
-    padding-bottom: .75em;
-}
+/*****************************/
+/***** pie chart section******/
+/*****************************/
 
-.square_list li { /* line height on stay engaged list*/
-    line-height: 2.2;
-}
-
-/* pie chart section*/
 #financial_info{
     grid-area: financial_info;
     background-color: #e6e8e7;
@@ -319,13 +348,18 @@ ul.square_list {
 }
 
 
-
+/*****************************/
+/*******hero image ***********/
+ /*****************************/
 #hero {
     width: 100%;
     display: grid;
     grid-column: 1/2;
 }
  
+/*****************************/
+/****section headers**********/
+/*****************************/
 
 section h3 {
     text-transform: uppercase; 
@@ -342,8 +376,10 @@ section h2{ /*welcome to ac*/
      padding-bottom: 1em;
 }
 
-
+/*****************************/
 /* attorney section*/
+/*****************************/
+
 #county_attorney {
     grid-area: county_attorney;
     padding-left: 12%;
@@ -374,6 +410,11 @@ ul.square_sylvia {
     padding-left: 2.75em;
    
 }
+
+/*****************************/
+/*****return to top*******/
+/*****************************/
+
 #top1 {
     text-align: right;
     padding-bottom: .5em;
@@ -390,8 +431,9 @@ ul.square_sylvia {
 #top1 a:hover {
     color: #009900;
 }
-
+/*****************************/
 /* governance secion*/
+/*****************************/
 
 #governance {
     grid-area: governance;
@@ -402,8 +444,9 @@ ul.square_sylvia {
     padding-bottom: 3em;
     background-color: #f5f8f7
 }
-
-/* governance secion*/
+/*****************************/
+/* pub safety*/
+/*****************************/
 
 #public_safety {
     grid-area: public_safety;
@@ -414,8 +457,10 @@ ul.square_sylvia {
     padding-bottom: 3em;
     background-color: #ffffff;
 }
-
+/*****************************/
 /* natural section */
+/*****************************/
+
 #natural {
     grid-area: natural;
     padding-left: 15%;
@@ -425,8 +470,10 @@ ul.square_sylvia {
     padding-bottom: 3em;
     background-color: #f5f8f7
 }
+/************************/
+/**** sustain section****/
+/************************/
 
-/* sustain section*/
 #sustain {
     grid-area: sustain;
     padding-left: 15%;
@@ -436,8 +483,10 @@ ul.square_sylvia {
     padding-bottom: 3em;
     background-color: #ffffff;
 }
+/************************/
+/*****infra sction*******/
+/************************/
 
-/*infra sction*/
 #infra {
     grid-area: infra;
     padding-left: 15%;
@@ -447,8 +496,10 @@ ul.square_sylvia {
     padding-bottom: 3em;
     background-color: #f5f8f7
 }
-
+/*****************************/
 /* econo section*/
+/*****************************/
+
 #econo_opp {
     grid-area: econo_opp;
     padding-left: 15%;
@@ -458,7 +509,10 @@ ul.square_sylvia {
     padding-bottom: 3em;
     background-color: #ffffff;
 }
+
+/*****************************/
 /* community resources section*/
+/*****************************/
 
 #community {
     grid-area: community;
@@ -470,7 +524,12 @@ ul.square_sylvia {
     background-color: #f5f8f7
 }
 
+
+/*****************************/
 /* the styles for footer*/
+/*****************************/
+
+
 footer {
     clear: both;
     background-color: #003366;
@@ -484,12 +543,24 @@ footer p{
     color: #ffffff;
     padding: 1em 1em;
 }
+
+/*****************************/
+/* mobile menu***
+/*****************************/
+
+
 #mobile_menu {
     display: none;
 }
 
 
-/* media Q at max with 800px */
+/*****************************/
+/*****************************************/
+/***** media Q at max with 800px *********/
+/*****************************************/
+/*****************************/
+
+
 @media only screen and (max-width: 799px) {
     html { background-image: url(none;)}
    /* body { box-shadow: none;}*/
@@ -536,12 +607,18 @@ footer p{
     width: 90%;
       
 }
+    
+    /*****************************/
+    /* mission boxes**/
+    /*****************************/
+    
     .boxed_right, boxed_right h4, .boxed_right p .boxed_right_v, .boxed_right_v h4, .boxed_right_v p, .boxed_left, .boxed_left h4, .boxed_left p, .boxed_right_v p, .boxed_right_v  {
    display: none;
 }
 
-    
+    /*****************************/
     /*iframe*/
+    /*****************************/
 #irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani, #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody  {
     float: none;
     margin: 0; 
@@ -561,7 +638,12 @@ footer p{
     }
     
 }
+/*****************************/
+/*****************************************/
 /* media query for with max width of 767 */
+/*****************************************/
+/*****************************/
+
 @media only screen and (max-width: 767px) {
     body {
         grid-template: repeat(5 , auto) / 1fr;/* 4 rows and 1 column */
@@ -578,6 +660,8 @@ footer p{
         grid-area: header;
         /*grid-gap: .5em;*/
     }
+    
+    
     
     main {
         grid-template-columns: 1fr; /* twon rows and 1 column and both rows size auto */
@@ -607,6 +691,11 @@ footer p{
         grid-column: 1/2;
         width: 100%;
     }
+    
+    /*****************************/
+    /* dept sections*/
+    /*****************************/
+    
     #county_manager, #county_comm, #county_attorney, #governance, #public_safety, #natural, #sustain, #infra, #econo_opp, #community, #engaged {
         float:none;
         padding-left: 1em;
@@ -637,7 +726,11 @@ footer p{
         background-color: #003366 !important;
     }
 }
-    /*mobile portrait to landscape */
+   
+/*****************************/
+/*mobile portrait to landscape */
+/*****************************/
+
     @media only screen and (max-width: 479px) {
         
         main {
