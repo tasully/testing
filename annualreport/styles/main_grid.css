@@ -224,7 +224,7 @@ ul.square {
     max-height: none;
    float: none;
     padding-left: 5em;
-    width: 90%;  
+    width: 100%;  
 }
 
 #irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani {
@@ -546,7 +546,7 @@ footer p{
 #irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani, #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody  {
     float: none;
     margin: 0; 
-    width: 100%;
+    width: 90%;
     max-width: none;
     padding-right: 0;
   
