@@ -554,6 +554,7 @@ footer p{
     #today { /*today;s show video*/
     float: none;
     padding-left: 0;
+    width: 100%;
      
 }
     #nav_menu {
