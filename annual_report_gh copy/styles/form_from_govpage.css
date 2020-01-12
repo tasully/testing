@@ -1,0 +1,514 @@
+/* Takumi Sullivan the styles for grid layout engaged page 11-21-19 */
+*{
+    margin: 0; /*for all*/
+    padding: 0;
+}
+html {
+    background-color: #ffffff;
+    background-image: url("../images/canoe.jpg");
+    background-repeat:repeat;
+}
+
+body{
+   font-family: 'Noto Sans', sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 100%;
+  /*  width: 98%; /* changed from 800px*/
+  /*  max-width: 960px;*/
+    margin: 0 auto;    /* to center */
+  /*  border: 1px solid #003366; /* navy color*/
+    background-color: rgba(255, 255, 255,0.85);
+   /* box-shadow: 3px 3px 4px 4px #000000;*/
+    display: grid;
+    grid-template: repeat(4 , auto) / auto 1fr;/* 4 rows and 1 column */
+    grid-template-areas: /* define template area*/
+        "head head"
+        "navi navi"
+        "main main"
+        "foot foot";
+}
+a {font-weight: bold}
+a:link { color: #cc6600;} /*this is orange color*/
+a:hover, a:focus {color: #009900;} /*this is green color*/
+
+/*the styles for header*/
+header {
+    grid-area: head;
+}
+header {
+    padding: 1.5em 1.5em 2em;
+    
+}
+header img{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .75em;
+    width: 5%; /* 60/800x100*/
+    min-width: 7.5%;
+    /*float: left; halloween styles
+    width: 10.67%;
+    max-width: 85px;
+    min-width: 60px;*/
+}
+header h2{
+    text-align: center;
+    font-size: 120%;
+    color: #003366;
+    /*font-family: arbutus, sans-serif;*/
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold 800;
+}
+
+/* header h3{ halloween
+    font-size: 120%;
+    text-indent: 1em;
+}*/
+
+/* the styles for navigation*/
+#nav_menu {
+    grid-area: navi;
+}
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   /* position: relative;*/
+    display: grid;
+    grid-template: auto / repeat(5, 1fr); /* define 1 row and 4 columns */ 
+    align-content: center;
+    }
+
+#nav_menu ul li a{
+    display: block;
+   /* width: 100%; */
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    background-color: #003366;
+    color: #ffffff;
+    font-weight: bold;
+}
+#nav_menu ul li a.current {
+    color: #cc6600;
+    }
+#nav_menu ul ul{
+  /*width: 100%;*/
+    display: none;  /* to hide the submenu until hover over*/
+   position: absolute;
+ top: 100%; /* postion submenus at bottom of main menu*/
+}
+#nav_menu ul ul li { 
+    float: none; /* to not to float*/
+} 
+#nav_menu a:hover {
+    background-color: #009900; /*grenn*/
+    color: #ffffff;
+    text-decoration: underline;
+}
+#nav_menu ul li:hover > ul {
+    display: block; /* show submenu when hover*/
+}
+#nav_menu > ul::after {
+    content: ""; /* add empty content to the first ul*/
+    clear: both; /* to stop floating element*/
+    display: block;
+}
+
+/*the styles for main*/
+main {
+  padding-right: 3em;
+    padding-bottom: 1.5em;
+    grid-area: main;
+    grid-template-columns: 15% 1fr; /* to make grid works*/
+    grid-gap: 20px;
+    padding-right: 8%;
+}
+main img {/*hero image*/
+ /* border-top: 5px solid #009900; /* green color*/
+ /*  border-bottom: 5px solid #009900;*/
+    max-width: 960px;
+    
+}
+/*the styles for section*/
+section {
+  width: 69.75%;
+    float:right;
+    padding: 3em 0 1.5em 0;
+    grid-area: section;
+    grid-row: 2/3;
+   
+
+}
+/*section h1{
+    font-size: 140%;
+    padding-bottom: .5em;
+}*/
+
+section h1{ /*welcome to ac*/
+    font-size: 130%;
+    /*padding-top: .5em;*/
+    color: #003366;
+}
+section h2{ /*welcome to ac*/
+    font-size: 130%;
+   /* padding-top: .5em;*/
+    color: #007000;
+    transition: font-size 2s ease-out 1s, color 2s ease-in 1s;
+}
+section h2:hover {
+    cursor: pointer;
+    font-size: 160%;
+    color: #cc6600;  
+}
+section p {
+    padding-bottom: .5em;
+}
+/
+/* the styles for the form */
+form {
+    
+}
+
+form fieldset {
+    margin-bottom: .5em;
+    padding-top: 1em;
+    border: 2px dotted #cc6600;
+    width: 60%;
+}
+legend {
+    color: #000000;
+    font-weight: bold;
+    font-size: 90%;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select #checkbox{
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 2px solid #009900;
+    color: #000000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+    border: 2px solid #cc6600;
+    color: #cc6600;
+}
+#order_type {/* drop down width*/
+    width: 14em;
+}
+#list{
+    margin-left: 50em;
+}
+#radio label{ /* radio button lable set side by side*/
+    float: none;  
+   
+}
+#radio input { 
+    width: auto; /* radio button lable width set auto to side by side*/ 
+}
+#checkbox input {
+width: auto;
+margin-left: 3em;
+margin-right: .5em;
+}
+#checkbox label {
+   float: none;
+    padding-top: 1em;
+}
+ textarea {
+height: 5em; 
+width: 20em;
+font-family: Arial, Helvetica, sans-serif; 
+margin-left: 3em;} 
+
+#oder_type {
+    width: 10em;
+}
+#exp_month {
+    width: 7em;
+}
+#exp_year {
+    width: 5em;
+    float: none;
+}
+br {
+    clear: both;
+}
+#buttons input {
+	width: 7em;
+    height: 3em;
+    border-radius: 10px;
+
+}
+#submit {
+    background-color: #cc6600;
+    font-weight: bold;
+    color: #ffffff;
+}
+#reset {
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+/* styles for article */
+
+/* styles for figure*/
+/*article img {
+    width: 200%;
+   border-radius: 30%;
+    
+}*/
+/*article {
+    grid-area: article;
+    grid-row: 3/4;
+}*/
+section h1{ /*from cm*/
+   /* padding-top: .5em;
+    padding-bottom: .5em;*/
+    font-family: 'Allura', cursive;
+    font-size: 200%;
+    color: #003366;
+}
+ article h4 {
+    font-size: 100%;
+    color: #cc6600;
+    border-bottom: 2px dotted #cc6600;
+}
+
+article h4, ul, li { /* to align the list */
+    margin:0;
+    padding: 0;
+}
+
+
+article p {
+    padding-bottom: .75em;
+}
+#top1 {
+    text-align: right;
+    padding-bottom: .5em;
+    padding-right: .75em;
+    padding-top: 1em;
+    font-size: 90%;
+     color: #cc6600;
+}
+#top1 a {
+    color: #cc6600;
+}
+#top1 a:hover {
+    color: #009900;}
+
+/*nav list style for aside*/
+
+/* the styles for aside*/
+aside  {
+    width: 20%;
+    float:left;
+    padding: 3em .5em 0 2em;
+    grid-area: aside;
+    display: grid;
+    grid-template: auto / 100% auto;
+    grid-row: 1/2;
+    grid-column: 1/3;
+} 
+aside h2 {
+    font-size: 90%;
+    font-weight: bold 700;
+    color: #003366;
+    line-height: 1.5;
+}
+aside ul {line-height: 2;}
+
+/*#nav_list {
+    grid-area: navlist;
+    width: 18.75%;
+    float:left;
+    padding: 2em .5em 0 2em;
+    grid-area: aside;
+    display: grid;
+    grid-template: auto / 100% auto;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}*/
+/* styles for nav list*/
+#nav_list {
+    grid-area: navlist;
+    display: grid;
+}
+#nav_list ul {
+    list-style-type: none; 
+    padding-left: 1em;
+    display: block;
+}
+#nav_list ul li {
+    float: left;
+    margin-left: .5em;
+    margin-top: .5em;
+}
+#nav_list img {
+    max-width: 25px;
+    padding-right: .3em;
+}
+
+#nav_list ul li a:hover {
+    border-bottom: solid .5px #cc6600;
+    border-top: none;
+}
+/* the styles for footer*/
+footer {
+    clear: both;
+    background-color: #003366;
+    grid-area: foot;
+}
+footer p{
+     text-align: center;
+    font-size: 70%;
+    color: #ffffff;
+    padding: 1em 1em;
+}
+#mobile_menu {
+     display: none;
+}
+/* media Q at max with 800px */
+@media only screen and (max-width: 799px) {
+    html { background-image: url(none;)}
+    body { box-shadow: none;}
+    body { font-size: 100%;}  
+    main img { width: 115%;}
+    header h2 { font-size: 100%;}
+    
+    aside {
+        float: none;
+    }
+    #nav_menu {
+        display: none;
+    }
+   form {
+        border: none;
+    
+}
+
+form fieldset {
+    margin-bottom: .5em;
+    padding-top: 1em;
+    border: none;
+    width: auto
+    }
+}
+/* media query for with max width of 767 */
+@media only screen and (max-width: 767px) {
+    body {
+        grid-template: repeat(4, auto) / 1fr;
+        grid-template-areas: 
+        "head"
+        "navi"
+        "main"
+        "foot";
+    }
+    header {
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr;
+        /*grid-gap: .5em;*/
+    }
+    header img {
+        float: none;
+        width: 18%;
+        justify-self: center;
+    }
+    main {
+        grid-template: 1fr; 
+        padding-right: 0;/* twon rows and 1 column and both rows size auto */
+    }
+    section {
+        float: none;
+        /*width: 95%;*/
+        grid-column: 1 /2;
+       padding-left: 1em;
+    }
+    section {
+        padding-right: 0;
+    }
+    
+    aside {
+        float: none;
+        padding-right: 2.5%;
+        padding-left: 7em;
+        width: 50%;
+        text-align: center;     
+    }
+    
+    /* styles for form*/
+  
+
+/*form fieldset {
+    margin-bottom: .5em;
+    padding-top: 1em;
+    border: none;
+    width: auto
+    }
+    */
+    #checkbox input {
+    margin-left: 0;
+    margin-right: .0;;
+}
+    #checkbox input {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+    
+   label {
+   /* float: left;*/
+    /*width: 12em;*/
+    text-align: left;
+}
+    
+    formfeild {
+        border:none;
+    }
+    
+ textarea {
+    width: 5em;
+    margin-left: 0;
+    }
+
+    #mobile_menu {
+        display: block;
+        grid-area: navi;
+    }
+    .slicknav_menu {
+        background-color: #003366 !important;
+    }
+     textarea {
+height: 5em; width: 20em;
+}
+    /*mobile portrait to landscape */
+    @media only screen and (max-width: 479px) {
+        header h2 
+        { font-size: 130%;
+            text-indent: 1em;
+        }
+        header h3 { 
+            font-size: 110%;
+            text-indent: 1em;
+        }
+        section h1 { font-size: 130%;}
+}
+    
+    
+
