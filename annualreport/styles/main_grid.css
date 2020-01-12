@@ -223,7 +223,6 @@ ul.square {
 #today { /*today;s show video*/
     max-height: none;
    float: none;
-    padding-left: 5em;
     width: 100%;  
 }
 
