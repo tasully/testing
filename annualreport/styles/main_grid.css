@@ -671,8 +671,6 @@ footer p{
        /* line-height: 1.75;*/
          grid-area: main;
         grid-column: 1/2;
-       margin-left: .5em;
-        margin-right: .5em;
         grid-template-areas: 
         "county_manager"
         "county_comm"
