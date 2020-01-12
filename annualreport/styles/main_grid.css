@@ -597,11 +597,9 @@ footer p{
     div.michel_l,  div.sylvia, div.commissioners  {
      float: none;
  }
-   #list {
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-bottom: 5%;
-}
+    #list {
+    padding-left: 0;
+    padding-right: 0;
   
 }
     .pie {
@@ -697,14 +695,12 @@ footer p{
     /* dept sections*/
     /*****************************/
     
-    #county_manager, #county_comm, #county_attorney, #governance, #public_safety, #natural, #sustain, #infra, #econo_opp, #community, #engaged, {
+    #county_manager, #county_comm, #county_attorney, #governance, #public_safety, #natural, #sustain, #infra, #econo_opp, #community, #engaged {
         float:none;
         padding-left: 1em;
         padding-right: 1em;
         margin: 0;
     }
-    
-   
     #financial_info {
         padding: 0;
         margin-right: 0;
@@ -757,6 +753,3 @@ footer p{
        
       
         
-
-    
-
