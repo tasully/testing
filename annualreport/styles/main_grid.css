@@ -584,10 +584,11 @@ footer p{
         }
   
       div.commissioners {
-      font-size: 90%;
+      font-size: 80%;
         text-align: center;
         padding-right: 0;
         padding-left: 0;
+          line-height: 1.5;
         }
     
     img.commish {
