@@ -598,7 +598,6 @@ footer p{
      float: none;
  }
    #list {
-
     padding-left: 12%;
     padding-right: 12%;
     padding-bottom: 5%;
@@ -698,7 +697,7 @@ footer p{
     /* dept sections*/
     /*****************************/
     
-    #county_manager, #county_comm, #county_attorney, #governance, #public_safety, #natural, #sustain, #infra, #econo_opp, #community, #engaged {
+    #county_manager, #county_comm, #county_attorney, #governance, #public_safety, #natural, #sustain, #infra, #econo_opp, #community, #engaged, #list {
         float:none;
         padding-left: 1em;
         padding-right: 1em;
