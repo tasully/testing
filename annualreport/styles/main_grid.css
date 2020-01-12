@@ -597,9 +597,12 @@ footer p{
     div.michel_l,  div.sylvia, div.commissioners  {
      float: none;
  }
-    #list {
-    padding-left: 0;
-    padding-right: 0;
+   #list {
+
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 5%;
+}
   
 }
     .pie {
