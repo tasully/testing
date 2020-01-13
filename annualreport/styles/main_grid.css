@@ -55,7 +55,6 @@ header h2{
 
 #nav_menu {
     grid-area: navi;
-    
   position: sticky; /*sticky nav*/
    top: 0; /*sticky nav*/
     background-color: #ffffff;
@@ -65,7 +64,6 @@ header h2{
     margin: 0;
     padding: 0;
    display: grid;
-  
    grid-template: repeat(2, 35px) / repeat(7, 1fr); /* define 1 row and 5 columns */ 
     align-content: center;
     }
