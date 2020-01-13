@@ -65,7 +65,7 @@ header h2{
     margin: 0;
     padding: 0;
    display: grid;
-    display: -ms-grid;
+  
    grid-template: repeat(2, 35px) / repeat(7, 1fr); /* define 1 row and 5 columns */ 
     align-content: center;
     }
