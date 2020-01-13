@@ -66,7 +66,6 @@ header h2{
     padding: 0;
    display: grid;
     display: -ms-grid;
-    -ms-grid-column: 7 1fr;
    grid-template: repeat(2, 35px) / repeat(7, 1fr); /* define 1 row and 5 columns */ 
     align-content: center;
     }
@@ -148,7 +147,7 @@ main {
 
 div.michel_l {
   float: left;
-  max-width: 500px;
+  max-width: 600px;
 font-size: 90%;
     color: #003366;
     font-weight: bold;
