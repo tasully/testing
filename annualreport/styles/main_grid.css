@@ -632,6 +632,15 @@ footer p{
     width: 100%;
      
 }
+    #mobile_menu {
+        display: block;
+        grid-area: navi;
+        text-transform: uppercase;
+   
+    }
+    .slicknav_menu {
+        background-color: #003366 !important;
+    }
     #nav_menu {
         display: none;
     }
@@ -711,17 +720,6 @@ footer p{
         line-height: 1.5;
         padding-right: 0;
         }
-   
-   
-    #mobile_menu {
-        display: block;
-        grid-area: navi;
-        text-transform: uppercase;
-   
-    }
-    .slicknav_menu {
-        background-color: #003366 !important;
-    }
 }
    
 /*****************************/
