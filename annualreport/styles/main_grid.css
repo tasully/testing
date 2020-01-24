@@ -91,11 +91,23 @@ header h2{
     color: #cc6600;
     }
 #nav_menu ul ul{
-  /*width: 100%;*/
+  width: 100%;
     display: none;  /* to hide the submenu until hover over*/
    position: absolute;
  top: 100%; /* postion submenus at bottom of main menu*/
 }
+
+/***** sub menu stuff******/
+/**************************/
+/*#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block
+}*/
+
 #nav_menu ul ul li { 
     float: none; /* to not to float*/
 } 
