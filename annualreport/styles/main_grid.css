@@ -1,6 +1,6 @@
 /* Alachua County annual report styles*/
 *{
-    margin: 0; /*for all*/
+ margin: 0; /*for all*/
     padding: 0;
 }
 html {
@@ -590,7 +590,9 @@ footer p{
         padding-left: 0;
           line-height: 1.5;
         }
-    
+    .michele_mobile {
+        width: 90%;
+    }
    
     img.commish {
         width: 90%
