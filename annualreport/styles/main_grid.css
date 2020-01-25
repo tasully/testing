@@ -357,6 +357,7 @@ h6 {
    /* padding-right: 15%;*/
     padding-left: 17%;
     padding-bottom: 1.25em;   
+    width: 70%;
 }
 
 
@@ -565,6 +566,17 @@ footer p{
     display: none;
 }
 
+/*****************************/
+/*****************************************/
+/***** media Q at max with 1200px *********/
+/*****************************************/
+/*****************************/
+
+img.commish {
+        width: 80%
+    }
+
+
 
 /*****************************/
 /*****************************************/
@@ -622,8 +634,8 @@ footer p{
 }
     .pie {
    /* padding-right: 15%;*/
-    padding: 0;
-    width: 90%;
+    padding: 1.5em;
+    
       
 }
     
@@ -730,7 +742,8 @@ footer p{
     }
    
     #financial_info {
-        padding: 0;
+        padding-left: 1em;
+        padding-right: 1em;
         margin-right: 0;
     }
     
