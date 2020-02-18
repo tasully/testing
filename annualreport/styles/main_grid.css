@@ -654,8 +654,8 @@ img.commish {
 #irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani, #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody  {
     float: none;
     margin: 0; 
-    width: 90%;
-    max-width: none;
+   /* width: 90%;*/
+    max-width: 95%;
     padding-right: 0;
   
 }
