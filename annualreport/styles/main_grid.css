@@ -368,7 +368,6 @@ h6 {
 #hero {
     width: 100%;
     display: grid;
-    padding-top: 1em;
     grid-column: 1/2;
 }
  
