@@ -178,7 +178,7 @@ font-size: 90%;
 /*****************************/
 
 .boxed_right, .boxed_right_v {
-   background-color: #0b3456;
+   background-color: #006633;
     float: right;
       width: 40%;
     max-width: 25%;
@@ -188,7 +188,7 @@ font-size: 90%;
 }
 
 .boxed_left {
-   background-color: #0b3456;
+   background-color: #006633;
     float: left;
       width: 40%;
     max-width: 25%;
