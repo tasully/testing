@@ -213,55 +213,6 @@ font-size: 90%;
 }
 
 /*****************************/
-/*****mission navy boxes***********/
-/*****************************/
-
-.boxed_right_navy {
-   background-color: #0b3456;
-    float: right;
-      width: 40%;
-    max-width: 25%;
-    margin: 2em;
-    color: #ffffff;
-    padding: 1.5em;
-}
-.boxed_right_v_navy
-{
-   background-color: #0b3456;
-    float: right;
-      width: 40%;
-    max-width: 25%;
-    margin: 2em;
-    color: #ffffff;
-    padding: 1.5em;
-}
-
-.boxed_left_navy {
-   background-color: #0b3456;
-    float: left;
-      width: 40%;
-    max-width: 25%;
-    margin: 2em;
-    color: #ffffff;
-    padding: 1.5em;
-}
-.boxed_right_navy h4, .boxed_right_v_navy h4, .boxed_left_navy h4{
-    font-family: 'Tangerine', cursive;
-    font-size: 300%;
-    font-weight: 100; 
-    padding-bottom: .25em;
-    padding-top: .25em
-    
-}
-.boxed_right_navy p, .boxed_right_v_navy p, .boxed_left_navy p {
-    font-size: 80%;
-    font-weight: 100;
-    font-style: italic;
-    line-height: 1.75
-
-}
-
-/*****************************/
 /**********bullet list********/
 /*****************************/
 
@@ -322,13 +273,13 @@ ul.square_list {
 #irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani {
     float: right;
    margin: 1.75em;
-     max-width: 60%;
+     max-width: 55%;
 }
 #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody {
     float: left;
     margin: 1.75em;
     padding-right: 1em;
-     max-width: 60%;
+     max-width: 55%;
    
 }
 
@@ -665,10 +616,10 @@ img.commish {
           line-height: 1.5;
         }
     .michele_mobile {
-        width: 40%;
+        width: 80%;
     }
     .torres {
-        width: 40%;
+        width: 80%;
     }
    
     img.commish {
@@ -693,13 +644,9 @@ img.commish {
     /* mission boxes**/
     /*****************************/
     
-    .boxed_right, boxed_right h4, .boxed_right p .boxed_right_v, .boxed_right_v h4, .boxed_right_v p, .boxed_left, .boxed_left h4, .boxed_left p, .boxed_right_v p, .boxed_right_v {
-        
-    }
+    .boxed_right, boxed_right h4, .boxed_right p .boxed_right_v, .boxed_right_v h4, .boxed_right_v p, .boxed_left, .boxed_left h4, .boxed_left p, .boxed_right_v p, .boxed_right_v  {
    display: none;
-    }
-    .boxed_right_navy, boxed_right_navy h4, .boxed_right_navy p .boxed_right_v_navy, .boxed_right_v_navy h4, .boxed_right_v_navy p, .boxed_left_navy, .boxed_left_navy h4, .boxed_left_navy p, .boxed_right_v_navy p, .boxed_right_v_navy {
-        display: none;}
+}
 
     /*****************************/
     /*iframe*/
@@ -707,9 +654,10 @@ img.commish {
 #irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani, #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody  {
     float: none;
     margin: 0; 
+   /* width: 90%;*/
+    max-width: 100%;
+   
     padding-right: 0;
-    width: 100%; 
-    max-width: none;
   
 }
     #today { /*today;s show video*/
@@ -820,15 +768,9 @@ img.commish {
             font-size: 90%;
         }
         header h2 
-        { font-size: 130%; }
+        { font-size: 130%;
+        }
       
-    .michele_mobile {
-        width: 100%;
-    }
-    .torres {
-        width: 100%;
-    }
-
         
         header h3 { 
             font-size: 110%;
