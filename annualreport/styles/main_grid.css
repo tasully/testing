@@ -212,11 +212,21 @@ font-size: 90%;
 
 }
 
-*****************************/
+/*****************************/
 /*****mission navy boxes***********/
 /*****************************/
 
-.boxed_right_navy, .boxed_right_v_navy {
+.boxed_right_navy {
+   background-color: #0b3456;
+    float: right;
+      width: 40%;
+    max-width: 25%;
+    margin: 2em;
+    color: #ffffff;
+    padding: 1.5em;
+}
+.boxed_right_v_navy
+{
    background-color: #0b3456;
     float: right;
       width: 40%;
