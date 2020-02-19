@@ -212,6 +212,45 @@ font-size: 90%;
 
 }
 
+*****************************/
+/*****mission navy boxes***********/
+/*****************************/
+
+.boxed_right_navy, .boxed_right_v_navy {
+   background-color: #0b3456;
+    float: right;
+      width: 40%;
+    max-width: 25%;
+    margin: 2em;
+    color: #ffffff;
+    padding: 1.5em;
+}
+
+.boxed_left_navy {
+   background-color: #0b3456;
+    float: left;
+      width: 40%;
+    max-width: 25%;
+    margin: 2em;
+    color: #ffffff;
+    padding: 1.5em;
+}
+.boxed_right_navy h4, .boxed_right_v_navy h4, .boxed_left_navy h4{
+    font-family: 'Tangerine', cursive;
+    font-size: 300%;
+    font-weight: 100; 
+    padding-bottom: .25em;
+    padding-top: .25em
+    
+}
+.boxed_right_navy p, .boxed_right_v_navy p, .boxed_left_navy p {
+    font-size: 80%;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.75
+
+}
+
 /*****************************/
 /**********bullet list********/
 /*****************************/
