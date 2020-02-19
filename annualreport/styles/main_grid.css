@@ -323,13 +323,13 @@ ul.square_list {
 #irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani {
     float: right;
    margin: 1.75em;
-     max-width: 55%;
+     max-width: 65%;
 }
 #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody {
     float: left;
     margin: 1.75em;
     padding-right: 1em;
-     max-width: 55%;
+     max-width: 65%;
    
 }
 
@@ -824,7 +824,9 @@ img.commish {
         header h2 
         { font-size: 130%;
         }
-      
+      irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani, #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody  {
+
+          max-width: 100%;}
         
         header h3 { 
             font-size: 110%;
