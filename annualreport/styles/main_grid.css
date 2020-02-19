@@ -683,7 +683,8 @@ img.commish {
     /* mission boxes**/
     /*****************************/
     
-    .boxed_right, boxed_right h4, .boxed_right p .boxed_right_v, .boxed_right_v h4, .boxed_right_v p, .boxed_left, .boxed_left h4, .boxed_left p, .boxed_right_v p, .boxed_right_v  {
+    .boxed_right, boxed_right h4, .boxed_right p .boxed_right_v, .boxed_right_v h4, .boxed_right_v p, .boxed_left, .boxed_left h4, .boxed_left p, .boxed_right_v p, .boxed_right_v 
+    .boxed_right_navy, boxed_right_navy h4, .boxed_right_navy p .boxed_right_v_navy, .boxed_right_v_navy h4, .boxed_right_v_navy p, .boxed_left_navy, .boxed_left_navy h4, .boxed_left_navy p, .boxed_right_v_navy p, .boxed_right_v_navy {
    display: none;
 }
 
