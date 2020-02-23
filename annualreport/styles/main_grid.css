@@ -596,7 +596,7 @@ ul.square_sylvia {
 
 footer {
     clear: both;
-    background-color: #003366;
+    background-color: hsl(168, 63%, 24%);
     display: grid;
     grid-area: footer;
     grid-column: 1/2;    
