@@ -448,7 +448,7 @@ h6 {
 section h3 {
     text-transform: uppercase; 
     font-size: 145%;
-    color: #003366;
+    color: hsl(168, 63%, 24%);
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     padding-bottom: 1em;
@@ -456,7 +456,7 @@ section h3 {
 }
 section h2{ /*welcome to ac*/
     font-size: 120%;
-   color: hsl(168, 63%, 24%);
+   color: #003366;
      padding-bottom: 1em;
 }
 
