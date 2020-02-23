@@ -55,12 +55,13 @@ header {
   float: left;
   width: 15%;
     min-width: 15%;
+    padding-right: .5em;
 }
 
 .header h2 {
   position: relative;
-  top: 18px;
-  left: 10px;
+ padding-top: 18px;
+  padding-left: 10px;
     font-size: 120%;
     color: #003366;
     font-family: 'Oswald', sans-serif;
@@ -857,10 +858,14 @@ img.commish {
             font-size: 90%;
         }
         
-   
-        header h2 
+        .header img{
+            padding: none;
+        }
+        .header h2 
         { font-size: 130%;
-          padding-bottom: .5em;
+          padding-top: none;
+            padding-left: none;
+            
         }
       irrigation, #recycle, #four, #response, #working, #child, #nw43rd, #nw8th, #visitgville, #crisis, #helping_ani, #sugar, #turf, #career, #newborn, #newborn_02, #towerrd, #eco_park, #foster, #cody  {
 
