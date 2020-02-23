@@ -727,7 +727,7 @@ img.commish {
    
     }
     .slicknav_menu {
-        background-color: #003366 !important;
+        background-color: hsl(168, 63%, 24%) !important;
     }
     #nav_menu {
         display: none;
