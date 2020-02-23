@@ -860,6 +860,7 @@ img.commish {
         
         .header img{
             padding: none;
+            width: 25%;
         }
         .header h2 
         { font-size: 130%;
