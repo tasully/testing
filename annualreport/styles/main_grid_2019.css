@@ -652,10 +652,23 @@ footer p{
 /***** media Q at max with 1200px *********/
 /*****************************************/
 /*****************************/
-
+@media only screen and (max-width: 1280px) {
 img.commish {
-        width: 80%
+        width: 100%
     }
+ #mobile_menu {
+        display: block;
+        grid-area: navi;
+        text-transform: uppercase;
+   
+    }
+    .slicknav_menu {
+      background-color: #003366 !important;
+    }
+    #nav_menu {
+        display: none;
+    }
+}
 
 
 
@@ -750,7 +763,7 @@ img.commish {
     width: 100%;
      
 }
-    #mobile_menu {
+   /* #mobile_menu {
         display: block;
         grid-area: navi;
         text-transform: uppercase;
@@ -761,7 +774,7 @@ img.commish {
     }
     #nav_menu {
         display: none;
-    }
+    }*/
     
 }
 /*****************************/
